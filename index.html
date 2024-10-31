@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement des Moyennes</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Classement des Moyennes - Top Promo</h1>
+<div class="container">
+    <div class="input-section">
+        <label for="student-select">Choisissez un étudiant :</label>
+        <select id="student-select">
+            <option value="">-- Sélectionner un étudiant --</option>
+            <option value="Youn">Youn</option>
+            <option value="Antoine">Antoine</option>
+            <option value="Malo">Malo</option>
+            <option value="Paul-Antoine">Paul-Antoine</option>
+            <option value="Léo">Léo</option>
+            <option value="Romain.A">Romain.A</option>
+            <option value="Teddy">Teddy</option>
+            <option value="Jean">Jean</option>
+            <option value="Baptiste">Baptiste</option>
+            <option value="Corentin">Corentin</option>
+            <option value="David">David</option>
+            <option value="Joan">Joan</option>
+            <option value="Killias">Killias</option>
+            <option value="Romain Chinois">Romain Chinois</option>
+            <option value="Lomap">Lomap</option>
+            <option value="OmegaVD">OmegaVD</option>
+        </select>
+
+        <label for="average-input">Moyenne :</label>
+        <input type="number" id="average-input" min="0" max="20" step="0.1" placeholder="Ex: 15.5">
+        <button onclick="addStudentAverage()">Ajouter Moyenne</button>
+    </div>
+
+    <h2>Classement des étudiants</h2>
+    <ul id="student-ranking"></ul>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
